@@ -1,9 +1,9 @@
 class Gows < Formula
   desc ""
   homepage ""
-  url "https://github.com/dpastoor/gows/releases/download/v1.0.7/gows_1.0.7_darwin_amd64.tar.gz"
-  version "1.0.7"
-  sha256 "1ad7e8db5a59a607fe63f8bae0a1df8f6ade18153bd32076baea7ddf00f1f2ac"
+  url "https://github.com/dpastoor/gows/releases/download/v1.1.0/gows_1.1.0_darwin_amd64.tar.gz"
+  version "1.1.0"
+  sha256 "b4a55f9a73346fac8d891d733113266f371d71c9cb23621dcf086cb089688029"
 
   def install
     bin.install "gows"
