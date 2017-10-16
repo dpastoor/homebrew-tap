@@ -1,9 +1,9 @@
 class Bbi < Formula
   desc ""
   homepage ""
-  url "https://github.com/dpastoor/babylon/releases/download/v0.3.0-bbq/bbi_0.3.0-bbq_darwin_amd64.tar.gz"
-  version "0.3.0-bbq"
-  sha256 "97b4cf4af3e28fb5c036ec5b5b638c6fd3f86d267c909e0c3b82d07ca390b8d3"
+  url "https://github.com/dpastoor/babylon/releases/download/v1.0.0-bbi/babylon_1.0.0-bbi_darwin_amd64.tar.gz"
+  version "1.0.0-bbi"
+  sha256 "c390a11abab2ecf18af259d51b83869c245b397e29755b1825c90f44cab83792"
 
   def install
     bin.install "bbi"
