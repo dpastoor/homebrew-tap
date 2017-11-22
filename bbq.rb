@@ -1,9 +1,9 @@
 class Bbq < Formula
   desc ""
   homepage ""
-  url "https://github.com/dpastoor/babylon/releases/download/v1.1.0-bbq/bbq_1.1.0-bbq_darwin_amd64.tar.gz"
-  version "1.1.0-bbq"
-  sha256 "c0d9aac91e8d857b1a2f35dcf005e70c32f7e5a89979c034c44215eafca2f505"
+  url "https://github.com/dpastoor/babylon/releases/download/v1.1.1-bbq/bbq_1.1.1-bbq_darwin_amd64.tar.gz"
+  version "1.1.1-bbq"
+  sha256 "78cfc679aedce2bc9120c754f18abad6a0d4cca471d42e80c548f8ac051d8eb6"
 
   def install
     bin.install "bbq"
