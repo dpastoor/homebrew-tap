@@ -1,9 +1,9 @@
 class Pkc < Formula
   desc ""
   homepage ""
-  url "https://github.com/r-infra/pkgcheck/releases/download/v0.2.0-alpha.2/pkc_0.2.0-alpha.2_darwin_amd64.tar.gz"
-  version "0.2.0-alpha.2"
-  sha256 "927c27ee55435b01e2643545e8c2250d5bd7ec35669c896061f9fa0809a40573"
+  url "https://github.com/r-infra/pkgcheck/releases/download/v0.2.0-alpha.3/pkc_0.2.0-alpha.3_darwin_amd64.tar.gz"
+  version "0.2.0-alpha.3"
+  sha256 "fd43d23c7f6de0b5bcb544a7bd4504a0c6719357b3b5fb1af1e786e86a773ef6"
 
   def install
     bin.install "pkc"
