@@ -1,9 +1,9 @@
 class Pkgr < Formula
   desc ""
   homepage ""
-  url "https://github.com/dpastoor/rpackagemanager/releases/download/v0.0.1-alpha.3/pkgr_0.0.1-alpha.3_darwin_amd64.tar.gz"
-  version "0.0.1-alpha.3"
-  sha256 "1c138cfc2a505facc6e3e6ba05f89aae93489ae4792cae6c23a379f05ed45a51"
+  url "https://github.com/metrumresearchgroup/pkgr/releases/download/v0.0.1-beta.1/pkgr_0.0.1-beta.1_darwin_amd64.tar.gz"
+  version "0.0.1-beta.1"
+  sha256 "7ec2f558450e879a2065bea44ecc044351a48f46f7a044ff6ea0a870fff28bdf"
 
   def install
     bin.install "pkgr"
