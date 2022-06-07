@@ -5,11 +5,11 @@
 class Qvm < Formula
   desc ""
   homepage ""
-  version "0.0.2-next"
+  version "0.0.1"
 
   on_macos do
     url "https://github.com/dpastoor/qvm/releases/download/v0.0.1/qvm_Darwin_x86_64.tar.gz"
-    sha256 "ba65f11c78954e3aad06264289fec64a155488dc1e840320c0e7cd4c0b184f06"
+    sha256 "37d6c09fed28b007549730a7d953b7949ae7e051d1335139fe27370960f0b2df"
 
     def install
       bin.install "qvm"
@@ -33,7 +33,7 @@ class Qvm < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/dpastoor/qvm/releases/download/v0.0.1/qvm_Linux_x86_64.tar.gz"
-      sha256 "4ce4007e643fb029d978d4a23daa155526f34df2c12274ce9a2108208562903b"
+      sha256 "2592dbf896bd74b958e8ddf89c172cd7f8d7ad35fd9ea6b6dddfda3982a90d6a"
 
       def install
         bin.install "qvm"
