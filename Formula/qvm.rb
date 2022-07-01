@@ -5,11 +5,11 @@
 class Qvm < Formula
   desc ""
   homepage ""
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/dpastoor/qvm/releases/download/v0.0.3/qvm_Darwin_x86_64.tar.gz"
-    sha256 "cc9c5cc80b608c5d3f7a41ac8889f2c0b755ade9af65538f5c963ace41518dfc"
+    url "https://github.com/dpastoor/qvm/releases/download/v0.0.4/qvm_Darwin_all.tar.gz"
+    sha256 "abafe0b62950c15b5f2e774c26ca28eb4213f673bf4be2cd94d3fa9b5ec3ae28"
 
     def install
       bin.install "qvm"
@@ -18,22 +18,24 @@ class Qvm < Formula
       fish_completion.install "completions/qvm.fish"
       man1.install "manpages/qvm.1.gz"
     end
-
-    if Hardware::CPU.arm?
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the Qvm
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
-      end
-    end
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/dpastoor/qvm/releases/download/v0.0.4/qvm_Linux_arm64.tar.gz"
+      sha256 "c7c840cee7ec7c008f6ad78ec3cc52685d97ea26802bd2ce8de9de73ada1d0fd"
+
+      def install
+        bin.install "qvm"
+        bash_completion.install "completions/qvm.bash" => "qvm"
+        zsh_completion.install "completions/qvm.zsh" => "_qvm"
+        fish_completion.install "completions/qvm.fish"
+        man1.install "manpages/qvm.1.gz"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/dpastoor/qvm/releases/download/v0.0.3/qvm_Linux_x86_64.tar.gz"
-      sha256 "0b27fdf1bcbd8326ef8cb2495cd2eaf247a1fbabe1bf2223145d4e25eff8f4a4"
+      url "https://github.com/dpastoor/qvm/releases/download/v0.0.4/qvm_Linux_x86_64.tar.gz"
+      sha256 "36f149e8f73e19435b4e85c40373cdc36ea269be04bd105cee8bb4c1c2664b69"
 
       def install
         bin.install "qvm"
