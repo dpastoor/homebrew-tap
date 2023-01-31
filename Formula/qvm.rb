@@ -5,11 +5,11 @@
 class Qvm < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
-    url "https://github.com/dpastoor/qvm/releases/download/v0.2.0/qvm_Darwin_all.tar.gz"
-    sha256 "56c0afa061bab044a97f5194f5e6af403b0a8fa39a8330eaee3d910ef1481f70"
+    url "https://github.com/dpastoor/qvm/releases/download/v0.3.0/qvm_Darwin_all.tar.gz"
+    sha256 "fcd0b88adec13f05226f54cf4bbe38b627825dd8e175fbd74232fa7860feeebc"
 
     def install
       bin.install "qvm"
@@ -22,8 +22,8 @@ class Qvm < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dpastoor/qvm/releases/download/v0.2.0/qvm_Linux_x86_64.tar.gz"
-      sha256 "5814694e72b04f813e7402dbb75216e8d83cd9d216a2408900f282a0402cebfb"
+      url "https://github.com/dpastoor/qvm/releases/download/v0.3.0/qvm_Linux_x86_64.tar.gz"
+      sha256 "4684df81066aaaf368df30a49184d40f3600be441ec8f113c98d3d31a1b560df"
 
       def install
         bin.install "qvm"
@@ -34,8 +34,8 @@ class Qvm < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dpastoor/qvm/releases/download/v0.2.0/qvm_Linux_arm64.tar.gz"
-      sha256 "d336cc8d044373a1dd548b58b0cf3b4bb435f6dd4efca612bb13781ad6407bd4"
+      url "https://github.com/dpastoor/qvm/releases/download/v0.3.0/qvm_Linux_arm64.tar.gz"
+      sha256 "8540a366371269e20994aec36eee608c06c90377c1c6b86f5e822d4e93599a03"
 
       def install
         bin.install "qvm"
